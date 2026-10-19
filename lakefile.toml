@@ -1,0 +1,16 @@
+name = "alc"
+version = "0.1.0"
+testDriver = "AlcTests"
+defaultTargets = ["Alc", "AlcTests"]
+
+[[require]]
+name = "cslib"
+scope = "leanprover"
+rev = "main"
+
+[[lean_lib]]
+name = "Alc"
+
+[[lean_lib]]
+name = "AlcTests"
+globs = ["AlcTests.+"]
